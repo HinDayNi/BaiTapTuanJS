@@ -1,28 +1,28 @@
-var Mark = {heigh: 1.69, mass: 78};
-var John = {heigh: 1.95, mass: 92};
+var Mark = { chieuCao: 1.69, canNang: 78 };
+var John = { chieuCao: 1.95, canNang: 92 };
 
-var BMI = function(heigh, mass) {
-    return mass / (heigh * heigh);
+var tinhBMI = function(chieuCao, canNang) {
+    return canNang / (chieuCao * chieuCao);
 }
 
-var markBMI1 = BMI(Mark.heigh, Mark.mass);
-var johnBMI1 = BMI(John.heigh, John.mass);
+var bmiMark1 = tinhBMI(Mark.chieuCao, Mark.canNang);
+var bmiJohn1 = tinhBMI(John.chieuCao, John.canNang);
 
-if (markBMI1 > johnBMI1) {
-    console.log(`Mark's BMI (${markBMI1}) is higher than John's (${johnBMI1})!`);
+if (bmiMark1 > bmiJohn1) {
+    console.log(`BMI của Mark (${bmiMark1}) cao hơn BMI của John (${bmiJohn1})!`);
 } else {
-    console.log(`John's BMI (${johnBMI1}) is higher than Mark's (${markBMI1})!`);
+    console.log(`BMI của John (${bmiJohn1}) cao hơn BMI của Mark (${bmiMark1})!`);
 }
 
-// Data 2
-Mark = {heigh: 1.88, mass: 95};
-John = {heigh: 1.76, mass: 85};
+// Dữ liệu 2
+Mark = { chieuCao: 1.88, canNang: 95 };
+John = { chieuCao: 1.76, canNang: 85 };
 
-var markBMI2 = BMI(Mark.heigh, Mark.mass);
-var johnBMI2 = BMI(John.heigh, John.mass);
+var bmiMark2 = tinhBMI(Mark.chieuCao, Mark.canNang);
+var bmiJohn2 = tinhBMI(John.chieuCao, John.canNang);
 
-if (markBMI2 > johnBMI2) {
-    console.log(`Mark's BMI (${markBMI2}) is higher than John's (${johnBMI2})!`);
+if (bmiMark2 > bmiJohn2) {
+    console.log(`BMI của Mark (${bmiMark2}) cao hơn BMI của John (${bmiJohn2})!`);
 } else {
-    console.log(`John's BMI (${johnBMI2}) is higher than Mark's (${markBMI2})!`);
+    console.log(`BMI của John (${bmiJohn2}) cao hơn BMI của Mark (${bmiMark2})!`);
 }
